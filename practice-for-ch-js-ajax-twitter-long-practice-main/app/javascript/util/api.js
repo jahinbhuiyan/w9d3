@@ -10,7 +10,12 @@ async function customFetch(url, options = {}) {
 }
 
 export function followUser(id) {
-
-
-  return customFetch(url)
+  return customFetch(`/users/${id}/follow`,  {method: 'POST'});
 }
+
+export function unfollowUser(id) {
+  return customFetch(`/users/${id}/unfollow`, {method:'DELETE'});
+}    
+
+
+
