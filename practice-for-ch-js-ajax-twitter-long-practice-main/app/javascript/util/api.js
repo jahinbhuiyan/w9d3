@@ -8,3 +8,9 @@ async function customFetch(url, options = {}) {
 
   return await fetch(url, options);
 }
+
+export function followUser(id) {
+
+
+  return customFetch(url)
+}
